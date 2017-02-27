@@ -1,0 +1,87 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "Mackie Drew's react skeleton.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "deploy": "npm run build && gh-pages -d dist",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackiedrew/react-skeleton.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Mackie Drew",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mackiedrew/react-skeleton/issues"
+  },
+  "homepage": "http://mackiedrew.com/react-skeleton/",
+  "jest": {
+    "setupFiles": [
+      "./jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "transform": {
+      ".*": "<rootDir>/node_modules/jest-babel-preprocessor/preprocessor.js"
+    },
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^18.0.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "css-loader": "^0.23.1",
+    "enzyme": "^2.7.1",
+    "enzyme-to-json": "^1.4.5",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-friendly-formatter": "^2.0.7",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "file-loader": "^0.10.0",
+    "gh-pages": "^0.12.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^18.1.0",
+    "jest-babel-preprocessor": "^0.3.0",
+    "jest-cli": "^18.1.0",
+    "json-loader": "^0.5.4",
+    "node-sass": "^4.5.0",
+    "postcss-loader": "^0.9.1",
+    "react-addons-test-utils": "^15.4.2",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-svg-loader": "^1.1.1",
+    "react-test-renderer": "^15.4.2",
+    "sass-loader": "^6.0.1",
+    "style-loader": "^0.13.1",
+    "svgo": "^0.7.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  }
+}
