@@ -12,4 +12,3 @@ Simple react skeleton I use, create-react-app is great but I'm a glutton for DIY
 6. Enzyme
 7. EsLintpre
 8. GitHub Pages
-9. Bootstrap 4
